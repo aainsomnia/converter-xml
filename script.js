@@ -52,10 +52,7 @@ var config = {
       alert("Incorrect password. Please try again.");
     }
   }
-  
   // Call the checkPassword function when the page loads
-  window.onload = checkPassword;
-
   
   
   
