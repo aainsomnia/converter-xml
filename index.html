@@ -1,43 +1,678 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Excel to XML Converter</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
-        <div class="center">
-        <h1>Excel to XML Converter V1</h2>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-    </div>
-    <form>
-        <div class="container">
-            <div class="center">
-                <label for="fileInput">Choose an Excel file:</label>
-                <input type="file" id="fileInput">
-                <br><br>
-                <button type="button" onclick="convert()">Convert to XML</button>
-            </div>
-        </div>
-    </form>
 
-    <footer>
-        <div class="container">
-            <div class="center">
-                <i class="fa fa-copyright" aria-hidden="false">Copyright 2023 By Dika Aulia Akbar</i>
+<!doctype html>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Landing Page Termurah ",
+    "url": "https://dikaauliaakbar.vercel.app/"
+  }
+</script>
+<html amp lang="id">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta title="Landing Page Termurah " />
+    <title>Landing Page Termurah </title>
+    <meta name="description" content="Landing Page Murah dan Cepat" />
+    <meta name="keywords" content="Landing Page, Freelancer, Landing, Page, Landing Page Murah, Freelancer Murah, Freelancer Landing Page, Company Profile, Compro, Company Profile Murah" />
+    <!-- Need Reconfirm -->
+    <meta name="google-site-verification" content="UFMk15-mChSCmToncoXcioYONHq-ImvciWiZqxSwee4" />
+    <!-- Need Reconfirm -->
+    <meta property="og:title" content="Landing Page Termurah, Dika Aulia Akbar" />
+    <meta property="og:description" content="Landing Page Termurah, Dika Aulia Akbar" />
+    <meta property="og:url" content="dikaauliaakbar.vercel.app" />
+    <meta property="og:site_name" content="dikaauliaakbar.vercel.app" />
+    <meta property="og:author" content="Dika Aulia Akbar" />
+    <link rel="canonical" href="dikaauliaakbar.vercel.app" />
+    <link rel="apple-touch-icon-precomposed" href="https://cdn-icons-png.flaticon.com/512/2751/2751651.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2751/2751651.png">
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
+    <style amp-custom>
+      :root {
+  --pallette-1: #450000;
+  --pallette-2: #000;
+  --pallette-3: #450000;
+  --pallette-4: #fff;
+  --pallette-5: #ff5c34;
+  --gradient: linear-gradient(45deg, #600000, #1c0000);
+  --gradient-2: linear-gradient(45deg, var(--pallette-2) 0%, var(--pallette-3) 100%);
+  --space: min(max(12px, 3.5vmin), 30px);
+  --space-s: min(max(8px, 2vmin), 20px);
+  --space-xs: min(max(4px, 1vmin), 10px);
+  --max-width: 1080px;
+  --radius: 10px;
+  --radius-2: 32px;
+  --heading: calc(20px + (32 - 28) * ((100vw - 360px) / (1440 - 360)));
+}
+
+body {
+  background: url(./assets/img/background.jpg) #000 no-repeat fixed ;
+  background-color: #01093a;
+  background-size: 100% 100% ;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--pallette-4);
+  line-height: 1.8;
+}
+
+.navigation {
+  width: 100%;
+  background: var(--gradient);
+  padding: var(--space-s) 0;
+}
+
+.navigation-container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.zero-space {
+  width: 60px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--space);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: var(--space);
+}
+
+.margin-bottom-3 {
+  margin-bottom: calc(var(--space) * 3)
+}
+
+.btn-main,
+.btn-sec {
+  padding: var(--space-s) calc(var(--space) * 2);
+  border-radius: var(--radius-2);
+}
+
+.btn-main {
+  background: var(--pallette-4);
+  color: var(--pallette-2);
+}
+
+.btn-sec {
+  background: var(--pallette-5);
+  color: var(--pallette-4);
+}
+
+.btn-menu {
+  padding: var(--space-xs) var(--space-s);
+  border: 1px solid var(--pallette-4);
+  border-radius: var(--radius-2);
+  color: var(--pallette-4);
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: 600;
+}
+
+main {
+  /* background: var(--gradient-2); */
+  background: black;
+}
+
+.columns-4 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-gap {
+  grid-gap: var(--space);
+}
+
+.feature {
+  /* border-radius: var(--radius);
+  padding: var(--space);
+  background: var(--gradient); */
+  border-radius: var(--radius);
+  border: solid;
+  padding: var(--space);
+  background: black;
+}
+
+.heading {
+  font-size: var(--heading);
+  font-weight: 700;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.seo-accordion {
+  width: 100%;
+}
+
+.seo-accordion .accordion {
+  position: relative;
+  display: block;
+  margin: 0;
+}
+
+.seo-accordion .accordion input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.seo-accordion .accordion .btn-accordion {
+  display: block;
+  text-align: left;
+  margin-bottom: var(--space-s);
+  border: 1px solid;
+  border-radius: var(--radius);
+  color: var(--pallette-4);
+  font-weight: 700;
+  cursor: pointer;
+  padding: var(--space);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.seo-accordion .accordion .btn-accordion:hover {
+  background: var(--pallette-1);
+}
+
+.seo-accordion .accordion .btn-accordion:focus,
+.seo-accordion .accordion .btn-accordion:active {
+  outline: none;
+}
+
+.seo-accordion .accordion input:checked~.btn-accordion {
+  background: var(--pallette-1);
+  border: none;
+}
+
+.seo-accordion .accordion .btn-accordion .arrow {
+  float: right;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--pallette-4);
+  border-radius: var(--radius);
+}
+
+.seo-accordion .accordion input:checked~.btn-accordion .arrow {
+  transform: rotate(180deg);
+}
+
+.seo-accordion .accordion .btn-accordion .arrow path {
+  fill: var(--pallette-4);
+}
+
+.seo-accordion .accordion .content-accordion {
+  width: 100%;
+  padding: 0;
+  margin: 5px 0;
+  display: none;
+}
+
+.seo-accordion .accordion .content-accordion p {
+  margin: var(--space);
+  padding: 0;
+}
+
+.seo-accordion .accordion input:checked~.content-accordion {
+  display: block;
+  pointer-events: all;
+  visibility: visible;
+}
+
+footer {
+  text-align: center;
+  color: #FFD700;
+}
+
+.divider {
+  height: 3px;
+  background: var(--pallette-5);
+  width: 5%;
+  margin: var(--space) 0;
+}
+
+@media screen and (max-width: 992px) {
+  .navigation-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .columns-m-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zero-space {
+    display: none;
+  }
+
+  .w-50 {
+    width: 100%;
+  }
+
+  .divider {
+    width: 20%;
+  }
+}
+
+.marquee-text {
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  overflow: hidden;
+  position: relative;
+  background: #0000;
+}
+
+.marquee-text:before,
+.marquee-text:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #0000;
+  top: 0;
+  z-index: 2;
+}
+
+.marquee-text:before {
+  left: 0;
+}
+
+.marquee-text:after {
+  right: 0;
+}
+
+.marquee-text div {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  white-space: nowrap;
+  color: #FFD700;
+  z-index: 1;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-text:hover div {
+  animation-play-state: paused
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+article a {
+  color: #2f00ff;
+  text-decoration: none;
+}
+article h1 {
+    text-align: center;
+}
+article h1 span {
+  color: #2f00ff;
+}
+
+article p {
+  text-align: justify;
+}
+article p span {
+
+}
+article ul li, article ol li  {
+  text-align: left;
+}
+
+          .banner {
+            max-width: 1110px;
+            border-radius: 10px;
+            animation: blinking 3s infinite;
+          }
+          .popup {
+            max-width: 710px;
+            border-radius: 10px;
+            animation: blinking 3s infinite;
+          }
+          .img {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+          @keyframes blinking {
+            0% {
+              box-shadow: 0 0 10px 2px #d75c1e;
+            }
+            50% {
+              box-shadow: 0 0 10px 2px #e5bf9e;
+            }
+            100% {
+              box-shadow: 0 0 10px 2px #d75c1e;
+            }
+          }
+          .btn-main {background-image: linear-gradient(to right, #4b4c78  0%, #a7c1c1  51%, #195225   100%)}
+          .btn-main {
+              padding: 10px 13px;
+              text-align: center;
+              text-transform: uppercase;
+              transition: 0.5s;
+              background-size: 200% auto;
+              color: white;
+              border-radius: 10px;
+              display: inline-block;
+              width: auto;
+              text-decoration: none;
+              box-shadow: 0 0 15px 3px #000;
+              font-family: sans-serif;
+              font-size: 18px;
+              font-weight: bold;
+              text-shadow: 1px 3px 1px #000;
+              margin-bottom: 10px;
+              animation: blinking 1s infinite;
+          }
+          .btn-mainn:hover {
+              background-position: right center; /* change the direction of the change here */
+              color: #ffc107;
+              text-decoration: none;
+          }
+          .video {
+            width: 100%;
+            height: auto;
+            max-width: 1110px;
+            border-radius: 10px;
+            animation: blinking 3s infinite;
+          }
+          .amp-img{
+            border-radius: 10px;
+            animation: blinking 3s infinite;
+          }
+
+          
+    </style>
+ 
+    <!-- AMP Analytics AFTER-->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Google Tag Manager after-->
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-P77TKWQ&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
+
+    <header>
+      <!-- Header Gif -->
+      <div class="container center">
+        <amp-img class="amp-img" src="https://media.tenor.com/EVR2TZAAiOYAAAAC/rayya-freelancer.gif" width="720" height="320" alt="Hello, AMPs" layout="intrinsic"></amp-img>
+      </div>
+      <!-- Header Gif -->
+<!-- Button Login & Register -->
+      <!-- <div class="container center">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <a href="https://rebrand.ly/KlikOKP1" class="btn btn-main" target="_blank">Login</a>
+              &nbsp;&nbsp;
+              <a class="btn btn-main" href="https://rebrand.ly/KlikOKP1" target="_blank">Register</a>
             </div>
+          </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-</body>
+      </div> -->
+<!-- Button Login & Register -->
+      <!-- <div class="container center">
+          <amp-youtube
+          class="video"
+          data-videoid="qsvBZcEvQUQ"
+          layout="responsive"
+          width="320"
+          height="150"
+          autoplay="false">
+        </amp-youtube>
+      </div> -->
+      <!-- New Container For Banner -->
+      <div class="container center">
+        <div class="col-md-12">
+          <img class="banner" 
+          src="https://i.ibb.co/MV73V8b/14.png" 
+          width="100%;" 
+          height="auto;">
+        </div>
+      </div>
+      <!-- New Container For Banner -->
+
+      <!-- Button Whatsapp & Live Chat -->
+      <div class="container center">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6">
+                <input type="file" id="fileInput" class="btn btn-main"></a>
+              <button class="btn btn-main" onclick="convert()">Export to XML</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button Whatsapp & Live Chat -->
+    </header>
+    <main>
+      <div class="container">
+        <div class="marquee-text">
+          <div>Landing Page - Company Profile - Data Analyst - Profesional Administrator - IT</div>
+        </div>
+        <div class="feature text-center center margin-bottom-3">
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "NewsArticle",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "dikaauliaakbar.vercel.app"
+              },
+              "headline": "Landing Page Termurah ",
+              "description": "Landing Page Termurah 2023",
+              "image": " .'/assets/img/game.png'",
+              "author": {
+                "@type": "Person",
+                "name": "Dika Aulia Akbar",
+                "url": "dikaauliaakbar.vercel.app"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Dika Aulia Akbar",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "dikaauliaakbar.vercel.app/assets/img/logo.gif"
+                }
+              },
+              "datePublished": "2022-11-29",
+              "dateModified": "2022-11-29"
+            }
+          </script>
+          <article>
+
+            <div class="container center">
+              <h2><span>Fasilitas <a href="https://dikaauls.vercel.app" >Dika Aulia Akbar </a> Serta Kemampuannya</span></h2>
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th colspan="3">INFORMASI CUSTOM WEB LANDING PAGE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left">⭐Waktu Pengerjaan</td>
+                    <td style="text-align:left">⭐&plusmn; 3 - 7 Hari</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">💰Harga Bawah</td>
+                    <td style="text-align:left">💸Rp 150.000</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">💰Harga Atas</td>
+                    <td style="text-align:left">💸Rp 900.000</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">🕑Revisi</td>
+                    <td style="text-align:left">🕑± 1,5 Menit</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">🕑Deployment</td>
+                    <td style="text-align:left">🕑± 3 menit</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">⭐Kategori Bahasa</td>
+                    <td style="text-align:left">Php - Laravel - Html - Css - Javascript</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">⭐Portofolio</td>
+                    <td style="text-align:left">✅E-Commerce , ✅Slot Website , ✅Landing Page</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left">⭐Hardware</td>
+                    <td style="text-align:left">✅Install Ulang , ✅TroubleShooting , ✅Maintenance</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="container center">
+              <div class="col-md-12">
+                <img class="banner" 
+                src="https://i.ibb.co/3ytYb0T/28-X-8-1.png" 
+                width="100%;" 
+                height="auto;">
+                <br>
+                <br>
+                <img class="banner" src="https://i.ibb.co/8dD2nD2/21.png" width="100%;" height="auto;">
+                <br>
+                <br>
+                <img class="banner" src="https://i.ibb.co/ZhSSzzK/28-X-8.png" width="100%;" height="auto;">
+                <br>
+                <br>
+                <img class="banner" src="https://i.ibb.co/MCzWfBg/19.png" width="100%;" height="auto;">
+                <br>
+                <br>
+                <img class="banner" src="https://i.ibb.co/7VsGp7T/28-X-8.png" width="100%;" height="auto;">
+              </div>
+            </div>
+            <!-- article -->
+            <article>
+                Dika Aulia Akbar
+            </article>
+            <!-- article -->
+            <div class="container center">
+                <div class="col-md-12">
+                    <img class="icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                    width="10%"
+                    height="auto;">
+                    <img class="icon"
+                    src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+                    width="10%"
+                    height="auto;">
+                    <img class="icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+                    width="10%"
+                    height="auto;">
+                </div>
+            </div>
+          <footer>Copyright © 2023 Dika Aulia Akbar. All Right Reserved</footer>
+
+          <!-- script -->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+          <script src="script.js"></script>
+          <!-- script -->
+  </body>
 </html>

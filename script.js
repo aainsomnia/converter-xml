@@ -36,27 +36,18 @@ function convert() {
     };
 }
 
-// Define the configuration object
-var config = {
-    password: "jakarta26",
-    redirectUrl: "http://converter-xml.vercel.app/convert.html"
-  };
+window.onload = function() {
+    var password = prompt("Please enter the password to proceed:");
   
-  // Function to check the password
-  function checkPassword() {
-    var password = prompt("Please enter the password:");
-  
-    if (password === config.password) {
-      window.location.href = config.redirectUrl;
+    if (password === "jakarta26") {
+      // Do something here if the password is correct
+      console.log("Correct password entered!");
     } else {
-      alert("Incorrect password. Please try again.");
+      // Redirect to a different page if the password is incorrect
+      alert("Incorrect password entered. Please try again.");
+      window.location.href = "./forget.html";
     }
-  }
-  // Call the checkPassword function when the page loads
-  window.onload = checkPassword;
-
-  
-  
+  };
   
   
   
