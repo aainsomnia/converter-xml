@@ -38,8 +38,8 @@ function convert() {
 
 // Define the configuration object
 var config = {
-    password: "mypassword123",
-    redirectUrl: "http://converter-xml.vercel.app/index_.html"
+    password: "jakarta26",
+    redirectUrl: "http://converter-xml.vercel.app/convert.html"
   };
   
   // Function to check the password
@@ -53,6 +53,8 @@ var config = {
     }
   }
   // Call the checkPassword function when the page loads
+  window.onload = checkPassword;
+
   
   
   
