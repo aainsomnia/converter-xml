@@ -35,3 +35,16 @@ function convert() {
         }
     };
 }
+
+window.onload = function() {
+    var password = prompt("Please enter the password to proceed:");
+  
+    if (password === "jakarta2612") {
+      // Do something here if the password is correct
+      console.log("Correct password entered!");
+    } else {
+      // Do something else here if the password is incorrect
+      console.log("Incorrect password entered.");
+    }
+  };
+  
