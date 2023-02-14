@@ -39,12 +39,16 @@ function convert() {
 window.onload = function() {
     var password = prompt("Please enter the password to proceed:");
   
-    if (password === "jakarta2612") {
+    if (password === "jakarta26") {
       // Do something here if the password is correct
       console.log("Correct password entered!");
     } else {
-      // Do something else here if the password is incorrect
-      console.log("Incorrect password entered.");
+      // Redirect to a different page if the password is incorrect
+      alert("Incorrect password entered. Please try again.");
+      window.location.href = "./forget.html";
     }
   };
+  
+  
+  
   
